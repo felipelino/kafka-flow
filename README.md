@@ -13,6 +13,11 @@ So we created a new one that uses the Google Library to Serialize/Deserialize wh
 
 This change is related to the suggestion from the issue: [#73](https://github.com/Farfetch/kafka-flow/issues/73)
 
+### How to use it?
+
+Add the dependency `KafkaFlow.Serializer.GoogleProtobuf` and use the serializer `GoogleProtobufMessageSerializer`.
+
+If the object is instance of `Google.Protobuf.IMessage` will use Google.Protobuf to Serialize/Deserialize. Otherwise, will use the Protobuf-Net library
 
 ## KafkaFlow
 
